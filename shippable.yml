@@ -1,4 +1,8 @@
-name: CT417-Assignment1-PartB_runCI
-type: runCI
-steps:
-  - IN: CT417-Assignment1-PartB_ciRepo
+language: java
+
+jdk:
+  - oraclejdk11
+
+build:
+  ci:
+    - mvn clean package
